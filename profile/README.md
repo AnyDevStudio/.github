@@ -24,7 +24,7 @@ everything from inside Studio, leading to the first public release.
 
 **[Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks):** a pixel-art fireworks show drawn entirely by code, with about 16,000 quads per frame.
 
-![Pixel Fireworks](https://raw.githubusercontent.com/AnyDevStudio/PixelFireworks/main/docs/screenshot.png)
+![Pixel Fireworks](https://raw.githubusercontent.com/AnyDevStudio/PixelFireworks/main/docs/demo.gif)
 
 ## Get involved
 
