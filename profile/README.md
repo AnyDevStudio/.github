@@ -1,16 +1,24 @@
 # AnyDevStudio
 
-Open source tools for making PS5 homebrew games and apps, without living in a terminal.
+Open source tools for making PS5 homebrew games and apps by dragging, not by fighting a terminal.
 
-![AnyDevKit Studio with a project open after a finished PS5 build](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/project.png)
+![A scene designed in AnyDevKit Studio](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/editor.png)
 
 ## [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio)
 
-A desktop studio for macOS, Windows and Linux. Open a project, press one button and get a PS5
-package, with every step and its log in front of you.
+Drag shapes and text onto a stage, press one button, and get a PS5 package. Built for macOS, Windows
+and Linux.
 
-Studio is in early development. Opening projects and building packages work today. Next come a
-small 2D game runtime and a drag and drop scene editor.
+| Build with one button | The same scene running |
+|---|---|
+| ![Studio finishing a PS5 build](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/build.png) | ![The built package running in AnyPS5 on macOS](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/game.png) |
+
+**Where it stands:** early development, with no download yet. The drag and drop editor and one button
+builds work on Apple Silicon macOS, and a scene made in Studio runs in AnyPS5 on macOS. It has not yet
+been run on a real PS5.
+
+**Coming next:** your own images, ready-made game behaviours, and a guided setup that installs
+everything from inside Studio, leading to the first public release.
 
 ## Get involved
 
