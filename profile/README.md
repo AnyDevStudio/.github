@@ -20,6 +20,12 @@ been run on a real PS5.
 **Coming next:** your own images, ready-made game behaviours, and a guided setup that installs
 everything from inside Studio, leading to the first public release.
 
+## Examples
+
+**[Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks):** a pixel-art fireworks show drawn entirely by code, with about 16,000 quads per frame.
+
+![Pixel Fireworks](https://raw.githubusercontent.com/AnyDevStudio/PixelFireworks/main/docs/screenshot.png)
+
 ## Get involved
 
 Everything here is public and MIT licensed. Fork it, try it, open an issue or send a pull request.
