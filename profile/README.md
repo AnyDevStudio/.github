@@ -9,8 +9,8 @@ The other repositories are games and demos made with it or with
 
 | Repository | What it is | Latest release | Platforms |
 |---|---|---|---|
-| [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio) | Desktop studio for making PS5 homebrew games and apps with AnyDevKit. Qt 6 and C++20, MIT. | [v0.1.0-alpha.4](https://github.com/AnyDevStudio/AnyDevKit-Studio/releases/latest) | Runs on macOS (Apple Silicon), Windows x64 and Linux x86_64. Builds games for PS5, Windows and Linux. |
-| [Greenhollow](https://github.com/AnyDevStudio/Greenhollow) | A small 2.5D RPG with ink-drawn art, made in Studio with no hand-written game code. GPL-2.0-only. | [v0.2.0](https://github.com/AnyDevStudio/Greenhollow/releases/latest) | PS5 homebrew, Windows x64, Linux x86_64, Mac with Apple silicon |
+| [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio) | Desktop studio for making PS5 homebrew games and apps with AnyDevKit. Qt 6 and C++20, MIT. | [v0.1.0-alpha.5](https://github.com/AnyDevStudio/AnyDevKit-Studio/releases/latest) | Runs on macOS (Apple Silicon), Windows x64 and Linux x86_64. Builds games for PS5, Windows and Linux. |
+| [Greenhollow](https://github.com/AnyDevStudio/Greenhollow) | A small 2.5D RPG with ink-drawn art, made in Studio with no hand-written game code. GPL-2.0-only. | [v0.3.0](https://github.com/AnyDevStudio/Greenhollow/releases/latest) | PS5 homebrew, Windows x64, Linux x86_64, Mac with Apple silicon |
 | [Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks) | A silent pixel-art fireworks show written in C++ with AnyDevKit. GPL-2.0-only. | None yet, build from source | PS5 homebrew |
 
 ## AnyDevKit Studio
@@ -35,10 +35,10 @@ feature.
 
 ## Greenhollow
 
-A small RPG made entirely in Studio: one `scene.json` and one `logic.json`, about 11,400 blocks in all.
+A small RPG made entirely in Studio: one `scene.json` and one `logic.json`, about 12,800 blocks in all.
 Make a Warrior, a Ranger or a Mage, help the people of the village and of Brookmere, and follow the
 green dew into the woods and down into the cave. It has six places, five quests, a pet cat or dog, two
-players on one screen, and saving and loading.
+players on one screen, friends online each on their own console, and saving and loading.
 
 | | |
 |---|---|
@@ -47,10 +47,14 @@ players on one screen, and saving and loading.
 | ![The dark forest with wolves, boars, a blue slime and a cat following its owner](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/forest.jpg) | ![The cave of crystals, after the Stone Warden falls](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/cave.jpg) |
 | Wolf packs and boars in the forest | The cave and its Stone Warden |
 
+![The host in the village and a friend in the meadow, at the same moment](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/online-apart.jpg)
+
+Online, each friend has a screen of their own: here the host is in the village while a friend walks the meadow.
+
 These pictures are drawn by a script from the game's real state at those moments. They are not captures
-from a GPU. This version has been played through from start to finish by a scripted bot against the
-real game runtime on the host, but has not yet been run on a GPU: not in AnyPS5, not on Windows, Linux
-or a Mac, and not on a real PS5. See
+from a GPU. The game has been played through by scripted bots against the real game runtime, alone, with
+two players on one screen and online. It has run in a window on one Apple silicon Mac, where two copies
+played together online. It has not been run on a real PS5, on Windows or on Linux. See
 [Where it has run](https://github.com/AnyDevStudio/Greenhollow#where-it-has-run) for the details.
 
 ## Download
