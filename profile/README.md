@@ -1,41 +1,78 @@
 # AnyDevStudio
 
-Open source tools for making PS5 homebrew games and apps by dragging, not by fighting a terminal.
+Open source tools and example games for PS5 homebrew. The main project is AnyDevKit Studio, a desktop
+app for making games from drag and drop scenes and jigsaw logic blocks, without living in a terminal.
+The other repositories are games and demos made with it or with
+[AnyDevKit](https://github.com/boykopovar/AnyDevKit), the SDK it is built on.
+
+## Repositories
+
+| Repository | What it is | Latest release | Platforms |
+|---|---|---|---|
+| [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio) | Desktop studio for making PS5 homebrew games and apps with AnyDevKit. Qt 6 and C++20, MIT. | [v0.1.0-alpha.4](https://github.com/AnyDevStudio/AnyDevKit-Studio/releases/latest) | Runs on macOS (Apple Silicon), Windows x64 and Linux x86_64. Builds games for PS5, Windows and Linux. |
+| [Greenhollow](https://github.com/AnyDevStudio/Greenhollow) | A small 2.5D RPG with ink-drawn art, made in Studio with no hand-written game code. GPL-2.0-only. | [v0.2.0](https://github.com/AnyDevStudio/Greenhollow/releases/latest) | PS5 homebrew, Windows x64, Linux x86_64, Mac with Apple silicon |
+| [Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks) | A silent pixel-art fireworks show written in C++ with AnyDevKit. GPL-2.0-only. | None yet, build from source | PS5 homebrew |
+
+## AnyDevKit Studio
+
+AnyDevKit is a command line SDK that compiles C++ and GLSL and packages the result for PS5. Studio puts
+a visual workspace on top of it: place shapes, text, images, sprites and tilemaps on a stage, snap
+together events and actions as logic blocks, and press one button to get a PS5 package. The same game
+can also be built as a Windows `.zip` or a Linux `.tar.gz`.
 
 ![A scene designed in AnyDevKit Studio](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/editor.png)
 
-## [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio)
-
-Drag shapes and text onto a stage, press one button, and get a PS5 package. Built for macOS, Windows
-and Linux.
-
-| Build with one button | The same scene running |
+| | |
 |---|---|
-| ![Studio finishing a PS5 build](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/build.png) | ![The built package running in AnyPS5 on macOS](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/game.png) |
+| ![Studio finishing a PS5 build with a live log](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/build.png) | ![The built package running in AnyPS5 on macOS](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/game.png) |
+| Build with one button, with a live log | The same scene running in AnyPS5 on macOS |
 
-**Where it stands:** early development, with no download yet. The drag and drop editor and one button
-builds work on Apple Silicon macOS, and a scene made in Studio runs in AnyPS5 on macOS. It has not yet
-been run on a real PS5.
+Studio is in alpha. The full flow has been tested on Apple Silicon macOS, and CI also builds Studio on
+Windows and Linux. Windows and Linux builds of games build from a Mac but have not been run on Windows
+or Linux by us. Nothing has been run on a real PS5 yet. The
+[Studio README](https://github.com/AnyDevStudio/AnyDevKit-Studio#what-it-does) lists the state of each
+feature.
 
-**Coming next:** your own images, ready-made game behaviours, and a guided setup that installs
-everything from inside Studio, leading to the first public release.
+## Greenhollow
 
-## Examples
+A small RPG made entirely in Studio: one `scene.json` and one `logic.json`, about 11,400 blocks in all.
+Make a Warrior, a Ranger or a Mage, help the people of the village and of Brookmere, and follow the
+green dew into the woods and down into the cave. It has six places, five quests, a pet cat or dog, two
+players on one screen, and saving and loading.
 
-**[Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks):** a pixel-art fireworks show drawn entirely by code, with about 16,000 quads per frame.
+| | |
+|---|---|
+| ![The village: two cottages, Mira's garden with three slimes, two players and the townsfolk](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/village.jpg) | ![Brookmere's market square with its fountain, shops and animal shelter](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/town.jpg) |
+| The village, with Mira's garden and two players | Brookmere, the market town |
+| ![The dark forest with wolves, boars, a blue slime and a cat following its owner](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/forest.jpg) | ![The cave of crystals, after the Stone Warden falls](https://raw.githubusercontent.com/AnyDevStudio/Greenhollow/main/docs/screens/cave.jpg) |
+| Wolf packs and boars in the forest | The cave and its Stone Warden |
 
-![Pixel Fireworks](https://raw.githubusercontent.com/AnyDevStudio/PixelFireworks/main/docs/demo.gif)
+These pictures are drawn by a script from the game's real state at those moments. They are not captures
+from a GPU. This version has been played through from start to finish by a scripted bot against the
+real game runtime on the host, but has not yet been run on a GPU: not in AnyPS5, not on Windows, Linux
+or a Mac, and not on a real PS5. See
+[Where it has run](https://github.com/AnyDevStudio/Greenhollow#where-it-has-run) for the details.
+
+## Download
+
+- [AnyDevKit Studio, latest release](https://github.com/AnyDevStudio/AnyDevKit-Studio/releases/latest):
+  packages for macOS on Apple Silicon, Windows x64 and Linux x86_64. They are not signed, so your
+  system will warn you the first time you open one.
+- [Greenhollow, latest release](https://github.com/AnyDevStudio/Greenhollow/releases/latest): a PS5
+  homebrew package (`.ffpfsc`), and builds for Windows x64, Linux x86_64 and Mac with Apple silicon.
 
 ## Get involved
 
-Everything here is public and MIT licensed. Fork it, try it, open an issue or send a pull request.
-Start with the [contributing guide](https://github.com/AnyDevStudio/AnyDevKit-Studio/blob/main/CONTRIBUTING.md).
+Everything here is public. Fork it, try it, open an issue or send a pull request. Start with the
+[contributing guide](https://github.com/AnyDevStudio/AnyDevKit-Studio/blob/main/CONTRIBUTING.md).
 
 ## Credits
 
-This work is built on [AnyDevKit](https://github.com/boykopovar/AnyDevKit) by
-[boykopovar](https://github.com/boykopovar), the SDK that compiles and packages every PS5 build
-Studio makes. Thank you for making it open source.
+This work exists because of [AnyDevKit](https://github.com/boykopovar/AnyDevKit), created by
+[boykopovar](https://github.com/boykopovar). Every PS5 package Studio builds is compiled and packaged
+by AnyDevKit, and the Windows and Linux builds of games run on the desktop libraries of
+[AnyPS5](https://github.com/boykopovar/AnyPS5), also by boykopovar.
 
-AnyDevStudio is an independent community project, not affiliated with boykopovar or with Sony
-Interactive Entertainment. PlayStation and PS5 are trademarks of their respective owner.
+AnyDevStudio is an independent project, not an official boykopovar project, and not affiliated with or
+endorsed by Sony Interactive Entertainment. PlayStation and PS5 are trademarks of their respective
+owner. Packages made with AnyDevKit are homebrew and cannot be published on PlayStation Store.
