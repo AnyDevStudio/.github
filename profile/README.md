@@ -12,6 +12,7 @@ The other repositories are games and demos made with it or with
 | [AnyDevKit Studio](https://github.com/AnyDevStudio/AnyDevKit-Studio) | Desktop studio for making PS5 homebrew games and apps with AnyDevKit. Qt 6 and C++20, MIT. | [v0.1.0-alpha.5](https://github.com/AnyDevStudio/AnyDevKit-Studio/releases/latest) | Runs on macOS (Apple Silicon), Windows x64 and Linux x86_64. Builds games for PS5, Windows and Linux. |
 | [Greenhollow](https://github.com/AnyDevStudio/Greenhollow) | A small 2.5D RPG with ink-drawn art, made in Studio with no hand-written game code. GPL-2.0-only. | [v0.3.0](https://github.com/AnyDevStudio/Greenhollow/releases/latest) | PS5 homebrew, Windows x64, Linux x86_64, Mac with Apple silicon |
 | [Pixel Fireworks](https://github.com/AnyDevStudio/PixelFireworks) | A silent pixel-art fireworks show written in C++ with AnyDevKit. GPL-2.0-only. | None yet, build from source | PS5 homebrew |
+| [AnyDevKit (fork)](https://github.com/AnyDevStudio/AnyDevKit) | Our fork of boykopovar's SDK: the macOS arm64 build of `adk` that Studio installs on a Mac, and the branches of our pull requests upstream. | [0.1.7-mac1](https://github.com/AnyDevStudio/AnyDevKit/releases) | Runs on macOS (Apple Silicon) |
 
 ## AnyDevKit Studio
 
