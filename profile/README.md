@@ -20,12 +20,12 @@ a visual workspace on top of it: place shapes, text, images, sprites and tilemap
 together events and actions as logic blocks, and press one button to get a PS5 package. The same game
 can also be built as a Windows `.zip` or a Linux `.tar.gz`.
 
-![A scene designed in AnyDevKit Studio](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/editor.png)
+![The Village scene of Greenhollow on the stage in Studio](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/stage.png)
 
 | | |
 |---|---|
-| ![Studio finishing a PS5 build with a live log](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/build.png) | ![The built package running in AnyPS5 on macOS](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/game.png) |
-| Build with one button, with a live log | The same scene running in AnyPS5 on macOS |
+| ![The logic blocks of Greenhollow's Title scene, with the variables and sounds on the left](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/blocks.png) | ![The Game page with Greenhollow's icon and background, and Windows chosen as the format](https://raw.githubusercontent.com/AnyDevStudio/AnyDevKit-Studio/main/docs/screenshots/game-page.png) |
+| Rules snapped together from blocks | One button builds for PS5, Windows or Linux |
 
 Studio is in alpha. The full flow has been tested on Apple Silicon macOS, and CI also builds Studio on
 Windows and Linux. Windows and Linux builds of games build from a Mac but have not been run on Windows
